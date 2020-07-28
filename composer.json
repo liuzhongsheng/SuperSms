@@ -11,7 +11,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "SuperSms\\": "./src"
+            "SuperSms\\": "./src",
+            "SuperSms\\Send\\": "./src/iTemplate"
         }
     },
     "require": {}
