@@ -12,7 +12,8 @@
     "autoload": {
         "psr-4": {
             "SuperSms\\": "./src",
-            "SuperSms\\Send\\": "./src/iTemplate"
+            "SuperSms\\Send\\":"./src/iTemplate",
+            "SuperSms\\Smsbao\\": "./src"
         }
     },
     "require": {}

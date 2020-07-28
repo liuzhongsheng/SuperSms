@@ -6,6 +6,6 @@ class Smsbao implements Send{
 
 	public function send($param)
 	{
-
+		phpinfo();
 	}
 }
