@@ -27,7 +27,7 @@ class Smsbao implements Send
         if ($result != 0) {
             return [
                 'success' => false,
-                'message' => $this->msg[$result],
+                'message' => 'error: 错误码'.$result.' '.$this->msg[$result],
             ];
         }
         return [
