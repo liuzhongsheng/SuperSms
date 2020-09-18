@@ -4,9 +4,9 @@ $obj = new SuperSms\Init();
 echo '<pre>';
 $param = [
     'class_name' => 'Smsbao',
-    'user'       => 'swlacn',
-    'password'   => 'swlacn',
-    'phone'		 => '18210560183',
+    'user'       => '',
+    'password'   => '',
+    'phone'		 => '',
     'content'    => '这是测试内容',
 ];
 $data = $obj->query($param);
