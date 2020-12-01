@@ -13,3 +13,6 @@ $param = [
     'uid'=>'18210560183',
 ];
 $data = $obj->query($param);
+
+echo '<Pre>';
+print_r($data);

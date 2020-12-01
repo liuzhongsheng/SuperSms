@@ -99,17 +99,17 @@ class Ucpaas implements Send
         ];
         $body = json_encode($param);
         $result = $this->getResult($sendurl, $body,'post');
-        var_dump($result);
-        // if ($result != 0) {
-        //     return [
-        //         'success' => false,
-        //         'message' => 'error: 错误码'.$result.' '.$this->msg[$result],
-        //     ];
-        // }
-        // return [
-        //     'succcss' => true,
-        //     'message' => '消息发送成功',
-        // ];
+        $result = json_decode($result,true);
+        if ($result['code'] != '000000') {
+            return [
+                'success' => false,
+                'message' => 'error: 错误码'.$result['code'].' '.$this->msg[$result['code']],
+            ];
+        }
+        return [
+            'succcss' => true,
+            'message' => '消息发送成功',
+        ];
     }
     private function getResult($url, $body = null, $method)
     {
